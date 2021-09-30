@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-200 ">
-    <div class="flex w-full pl-10 h-screen justify-around items-center relative">
-        <div class="w-2/6">
-            <h1 class="font-bold text-5xl pb-10">Change your mind</h1>
-            <button class="bg-indigo-400 p-3 border-white hover:bg-transparent transition-all rounded-lg text-white mb-5">Get Started</button>
-            <p class="font-semibold text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, repellat?</p>
+    <div class="flex w-full pl-10 h-screen justify-around items-center relative overflow-hidden">
+        <div class="w-2/6 anim" id="left">
+            <h1 class="font-bold text-5xl pb-10 anim">Change your mind</h1>
+            <button class="bg-indigo-400 p-3 border-white hover:bg-transparent transition-all rounded-lg text-white mb-5 anim">Get Started</button>
+            <p class="font-semibold text-2xl anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, repellat?</p>
         </div >
-        <div class="w-1/6 relative left-40">
+        <div class="w-1/6 relative left-40 z-30" id="center">
             <img src="world.png">
         </div>
-        <div class="w-3/6"><img src="download.jpeg" class="w-full h-screen object-cover object-fill"></div>
+        <div class="w-3/6 relative z-10" id="right"><img src="download.jpeg" class="w-full h-screen object-cover object-left"></div>
     </div>
     <script src="gsap3.js"></script>
     <script src="cssrules.js"></script>
